@@ -13,8 +13,9 @@ def main(s):
     k=0
     while i<len(s):
         if c.find(s[i])==-1:
-            if s[i]!='a' and s[i]!='e' and s[i]!='i' and s[i]!='u' and s[i]!='o' and s[i]!='A' and s[i]!='E' and s[i]!='I' and s[i]!='U' and s[i]!='O':
-                k+=1
+            if s[i].isalpha():
+                if s[i]!='a' and s[i]!='e' and s[i]!='i' and s[i]!='u' and s[i]!='o' and s[i]!='A' and s[i]!='E' and s[i]!='I' and s[i]!='U' and s[i]!='O':
+                    k+=1
         i+=1
     return k
-print(main("fghfgh#%@efs"))
+print(main("fgh234fgh#%@efs"))
