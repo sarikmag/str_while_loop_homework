@@ -7,3 +7,11 @@ def main(s):
     Returns:
         int: return answer
     """
+    i=0
+    k=0
+    while i<len(s):
+        if s[i]=='a' or s[i]=='e' or s[i]=='i' or s[i]=='u':
+            k+=1
+        i+=1
+    return k
+print(main("CodeschaeioolUz"))
